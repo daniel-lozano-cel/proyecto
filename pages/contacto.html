@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Aria8Ball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>    
+    <link rel="stylesheet" href="../style.css"/>
+</head>
+<body class="background body2">
+
+     <!-- Titulo e indice de la pagina -->
+    <header class="head">
+        <h2 class="head__title">Aria8Ball</h2>
+        <ul class="head__index">
+            <li><a href="../index.html" rel="">Inicio</a></li>
+
+            <li><a href="./sobre_mi.html" rel="" >Sobre Mí</a></li>
+
+            <li><a href="./contacto.html" rel="" >Contacto</a></li>
+        </ul>
+    </header>
+    <main>
+        
+        <section class="form">
+            <!-- Subtitulo -->
+            <h2 class="footer2 form__title">Contacto</h2>
+            
+            <!-- Formulario -->
+            <form action="" method="" enctype="">
+
+                <label for="name" class="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Inserte su nombre"/>
+            
+
+                <label for="lastname" class="name">Apellido:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Inserte su apellido"/>
+              
+
+                <label for="correo" class="email">E-mail / Correo eléctronico:  </label>
+                <input type="email" id="correo" name="correo" placeholder="Inserte su e-mail"/>
+                
+
+                <label for="service" class="service">Servicio deseado:</label>
+                    <select name="service" id="service">
+                        <option value="Publicidad">Publicidad</option>
+                        <option value="Diseño">Diseño</option>
+                    </select>
+               
+                <label for="check" class="check">¿Desea estar al tanto de mis actualizaciones via newsletter?</label>
+                <input type="checkbox" checked id="check"/>
+               
+
+                <label for="consulta" class="consulta">Información adicional: </label>
+                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="(Opcional)"></textarea>
+            
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar formulario</button>
+                
+            </form>
+        </section>
+    </main>
+</body>
+
+<!-- Pie de pagina -->
+<footer class="footer2">
+    <ul class=" foot__index">
+        <li><a href="../index.html" rel="">Inicio</a></li>
+
+        <li><a href="./sobre_mi.html" rel="">Sobre Mí</a></li>
+
+        <li><a href="./contacto.html" rel="">Contacto</a></li>
+    </ul>
+    <h5>@aria8ball    2020 - 2022</h5>
+</footer>
+</html>

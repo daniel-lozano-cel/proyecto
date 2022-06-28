@@ -1,0 +1,251 @@
+/* General */
+html, body{
+    min-height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: 'Righteous', cursive;
+    background-color: rgb(225,225,225);
+    color:white;
+}
+li{
+    list-style-type: none;
+}
+
+
+
+.background{
+    background-image: url("./images/background.png");
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.container{
+    margin-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.head{
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 30px 20px;
+}
+.head__title{
+    display: flex;
+    justify-content: space-between ;
+    font-size: 30px;
+}
+/* indice cabecera */
+.head__index{
+    display: grid;
+    justify-items: right;
+    margin-right: 120px;
+    font-size: 20px;
+}
+
+.head__index li{
+    margin: 0 15px;
+}
+
+.head__index li a{
+    color: #e2e8f0;
+    font-weight: bold;
+}
+
+/* indice pie de pagina */
+.foot__index{
+    display: flex;
+}
+
+.foot__index li{
+    margin: 0 15px;
+}
+
+.foot__index li a{
+    color: #e2e8f0;
+    font-weight: bold;
+}
+
+/* Tarjetas */
+
+
+.card{
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px 20px 20px 20px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    margin-top: 30px;
+    
+}
+
+.card2{
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px 20px 20px 20px;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    margin-top: 30px;
+    
+}
+.card__title{
+    position: relative;
+    border-radius: 20px;
+}
+
+.card__title img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card__info{
+    margin-bottom: 40px;
+}
+
+.card__href{
+    background-color: #22c55e;
+    color: #fff;
+    width: 200px;
+    height: 30px;
+    display:inline-block;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+    
+}
+
+/* Ejemplos de producto */
+.ex1{
+    width:250px;
+    height:250px;
+    display: block;
+    margin-top: 40px;
+}
+.ex2{
+    width: 245px;
+    height:375px;
+    display: block;
+    margin-top: 40px;
+}
+
+.extitle{
+    display: block;
+}
+
+.banner1{
+    width: 750px;
+    height:250px;
+    margin-top: 40px;
+}
+
+.banner2{
+    width:760px;
+    height:240px;
+    margin-top: 40px;
+}
+
+/* Adiciones  */
+
+.body2{
+    margin: 0px 0px 0px 20px;
+}
+.footer{
+    margin-top: 150px;
+}
+.footer2{
+    display: grid;
+    justify-items: center;
+}
+
+.body__titleBig{
+    font-size: 50px;
+}
+/* grids */
+
+.grids{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+/* grids en el cuestionario */
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+form{
+    margin: 100px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:20px;
+    justify-content: right;
+}
+
+
+/* media queries */
+
+@media (max-width:768px){
+    .background{
+        background-size: auto 150%;
+    }
+    header{
+        flex-direction: column;
+    }
+
+}
+@media (max-width:480px){
+    .background{
+        background-size: auto 150%;
+        background-color: black;
+    }
+    .grids{
+        grid-template-columns: 1fr;
+    }
+    .head__index{
+        display: none;
+    }
+    .foot__index li a{
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    form{
+        grid-template-columns: 1fr;
+    }
+    .form__title{
+        display: none;
+    }
+    .card2{
+        width: auto 50%;
+    }
+    .banner1{
+        width: 750px;
+        height:250px;
+    }
+    
+    .banner2{
+        width:760px;
+        height:440px;
+    }
+    h5{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 30px;
+    }
+    .head__title{
+        font-size: 50px;
+    }
+    .footer2{
+        font-size: 30px;
+    }
+    .head__index{
+        display: flex;
+    }
+}
