@@ -116,6 +116,18 @@ li{
     transition: background-color 0.3s;
     
 }
+.card__href:hover{
+    background-color: #045e25;
+}
+
+.card__image{
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+.card__image:hover{
+    transform: rotate(5deg);
+}
+
 
 /* Ejemplos de producto */
 .ex1{
