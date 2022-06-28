@@ -1,18 +1,21 @@
 /* General */
 html, body{
     min-height: 100%;
-    margin: 0;
+    margin: 0px;
 }
 
 body{
     font-family: 'Righteous', cursive;
     background-color: rgb(225,225,225);
     color:white;
+    margin-right: 0px;
 }
 li{
     list-style-type: none;
 }
-
+ul{
+    padding: 0px 0px 0px 0px;
+}
 
 
 .background{
@@ -187,7 +190,7 @@ li{
 
 .form{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: auto;
 }
 form{
     margin: 100px 20px 0px 20px;
@@ -229,6 +232,9 @@ form{
     }
     .form__title{
         display: none;
+    }
+    .card{
+        width: auto 50%;
     }
     .card2{
         width: auto 50%;
