@@ -10,37 +10,39 @@
     <title>Inicio - Aria8Ball</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>    
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>   
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./style.css"/>
-
+    
 </head>
 
 <body class="background"> 
    <!-- Titulo e indice de la pagina -->
-    <header class="head body2">
-        <div class="head__title container">
-        <h2 class="head__title">
-            Aria8Ball
-        </h2>
-
-        <nav>
-            <ul class="head__index">
-                <li><a href="./index.html" rel="">Inicio</a></li>
-                <li><a href="./pages/sobre_mi.html" rel="" >Sobre Mí</a></li>
-                <li><a href="./pages/contacto.html" rel="" >Contacto</a></li>
-            </ul>
-        </nav>
+   <header  class="header">
+        <div>
+            <h2 class="header__title">
+                <a href="./index.html">Aria8ball 👾</a>
+            </h2>
+            <nav>
+                <ul class="navigation ">
+                    <li><a href="./pages/sobre_mi.html" rel="" >Sobre Mí</a></li>
+                    <li><a href="./pages/contacto.html" rel="" >Contacto</a></li>
+                </ul>
+            </nav>
         </div> 
     </header>
 
-    <main >
+    <main>
         <!-- Tabla que enseña producto a vender -->
-        <section class="body container">
+        <section class="body">
         <h1 class="body__titleBig footer2">Mis servicios</h1>
-        <div class="grids">
+        <div class="card__container">
             <article class="card">
                 <div class="card__title">
                     <img  class="card__image" src="./images/banner.jpg" alt="Publicidad"/>
+                    <img  class="card__image" src="./images/banner2.jpg" alt="Publicidad2"/>
+                    <img  class="card__image" src="./images/banner3.jpg" alt="Publicidad3"/>
                 </div>
                 <h3 class="card__title">Publicidad y contenido para redes</h3>
                 <p class="card__info">
@@ -50,7 +52,7 @@
             </article>
             <article class="card">
                 <div class="card__title">
-                    <img class="card__image" src="./images/1.png" alt="Publicidad"/>
+                    <img class="card__image" src="./images/1.png" alt="Ejemplo"/>
                 </div>
                 <h3 class="card__title">Publicidad y contenido para redes</h3>
                 <p class="card__info">
@@ -58,8 +60,8 @@
                 </p>     
                 <a class="card__href" href="./pages/diseño.html">Ver ejemplos</a>
             </article>
-            
         </div>
+        </section>
     </main>
 
 </body>

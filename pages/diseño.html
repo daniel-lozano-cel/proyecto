@@ -7,21 +7,26 @@
     <title>Diseño de personajes - Aria8Ball</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>    
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>  
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">  
     <link rel="stylesheet" href="../style.css"/>
 </head>
 <body class="background body2">
 
      <!-- Titulo e indice de la pagina -->
-    <header class="head">
-        <h2 class="head__title">Aria8Ball</h2>
-        <ul class="head__index">
-            <li><a href="../index.html" rel="">Inicio</a></li>
-
-            <li><a href="./sobre_mi.html" rel="" >Sobre Mí</a></li>
-
-            <li><a href="./contacto.html" rel="" >Contacto</a></li>
-        </ul>
+    <header  class="header">
+        <div>
+            <h2 class="header__title">
+                <a href="../index.html">Aria8ball👾</a>
+            </h2>
+                <nav>
+                    <ul class="navigation ">
+                        <li><a href="./sobre_mi.html" rel="" >Sobre Mí</a></li>
+                        <li><a href="./contacto.html" rel="" >Contacto</a></li>
+                    </ul>
+                </nav>
+        </div> 
     </header>
     <main>
         <!-- Subtitulo -->
@@ -30,16 +35,37 @@
             <h4>Personajes unicos y/o de su preferencia</h4> 
         </section>
         <!-- Ejemplos -->
-        <section>
-            <div class="card">
-                <h3>Comisión para imagen principal en redes sociales | JesJes</h3>
-                <img class="card__image ex1"src="../images/1.png" class="ex1" alt="1" />
-            </div>
-            <div class="card">
-                <h3>ilustración personal</h3>
-                <img class="card__image ex2"src="../images/2.png" class="ex2" alt="2" />
-            </div>    
-            
+        </section>
+        <section class="container my-5">
+            <div id="carouselExampleCaptions" class="carousel container slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block color">
+                      <h5>ilustración para redes sociales | Jes Jes</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>ilustración personal</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div> 
         </section>
     </main>
 </body>
