@@ -1,0 +1,220 @@
+@import 'variables';
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-height: 100%;
+    width: 100%;
+    margin: 0px;
+    header{
+        margin: 0;
+    }
+    body{
+        font-family: 'Righteous', cursive;
+        background-color: rgb(225,225,225);
+        color:white;
+        margin-right: 0px;
+        
+        a{
+            text-decoration: none;
+            color: $fontColor;
+        }
+
+        nav {
+            ul{
+                padding: 0px 0px 0px 0px;
+
+                li{
+                    list-style-type: none;
+                }
+            }
+            h5{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+        }
+    }
+    .color{
+        color: red;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .navigation{
+        display: flex;
+        justify-content: end;
+        a{
+            font-size: 30px;
+        }
+        li{
+            margin-right: 55px;
+            a:hover{
+                font-weight: bold;
+                transition: color 0.3;
+            }
+        }
+        li:active{
+            transform: scale(0.9);
+        }
+    }
+    .footer{
+        margin-top: 50px;
+    }
+    .footer2{
+        margin-top: 50px;
+        display: grid;
+        justify-items: center;
+    }
+    .body__titleBig{
+        font-size: 50px;
+    }
+    .foot__index{
+        display:flex;
+        li{
+            margin: 0 15px;
+            list-style-type: none;
+            a{
+                color: $fontColor;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.background{
+    background-image: url("./images/background.png");
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.header{
+    background-color: #0f172a;
+    color: $fontColor;
+    padding: 10px 10px;
+
+    &__title{
+        color:$fontColor;
+        padding: 0;
+        a{
+            font-size: 50px;
+        }  
+    }
+    &__title:hover::after  {
+        content: 'Inicio'; 
+        margin-left: 5px;
+        font-size: 15px;
+    }
+}
+
+.card{
+    background-color: $colorBlack;
+    padding: 20px 20px 20px 20px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px $colorBlack;
+    margin-top: 30px;
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    &__container{
+        display: grid;
+        justify-items: center;
+        margin-bottom: 0;
+    }
+    &__title{
+        position: relative;
+        border-radius: 20px;
+        img{
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    &__info{
+        margin-bottom: 40px;
+    }
+    &__href{
+        background-color: #22c55e;
+        color: #fff;
+        width: 200px;
+        height: 30px;
+        display:flex;
+        align-items: center;
+        padding:20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: background-color 0.3s;   
+    }
+    &__href:hover{
+        background-color: #045e25;
+    }
+    &__image{
+        transition: transform 0.3s;
+        border-radius: 10px;
+    }
+    &__image:hover{
+        transform: rotate(5deg);
+    }
+    
+    
+}
+.card2{
+    background-color: $colorBlack;
+    padding: 20px 20px 20px 20px;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px $colorBlack;
+    margin-top: 30px;
+    
+}
+.form{
+    display: grid;
+    grid-auto-rows: auto;
+}
+form{
+    margin: 100px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:20px;
+    justify-content: right;
+}
+@media (max-width:768px){
+    .background{
+        background-size: auto 150%;
+    }
+    .navigation{
+        justify-content: end;
+    }
+    html {
+        display:table;
+        width:100%;
+    }
+
+}
+@media (max-width:576px){
+    .background{
+        background-size: auto 150%;
+    }
+    .navigation{
+        justify-content: end;
+    }
+    
+}
+
+@media (max-width:468px){
+    .background{
+        background-size: auto 150%;
+    }
+    .navigation{
+        margin-top: 30px;
+        justify-content: end;
+    }
+    .card__container{
+        grid-template-columns: 1fr;
+    }
+   
+}

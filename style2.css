@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0px; }
+  html header, body header {
+    margin: 0; }
+  html body, body body {
+    font-family: 'Righteous', cursive;
+    background-color: #e1e1e1;
+    color: white;
+    margin-right: 0px; }
+    html body a, body body a {
+      text-decoration: none;
+      color: #e2e8f0; }
+    html body nav ul, body body nav ul {
+      padding: 0px 0px 0px 0px; }
+      html body nav ul li, body body nav ul li {
+        list-style-type: none; }
+    html body nav h5, body body nav h5 {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px; }
+  html .color, body .color {
+    color: red; }
+  html .about, body .about {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+  html .navigation, body .navigation {
+    display: flex;
+    justify-content: end; }
+    html .navigation a, body .navigation a {
+      font-size: 30px; }
+    html .navigation li, body .navigation li {
+      margin-right: 55px; }
+      html .navigation li a:hover, body .navigation li a:hover {
+        font-weight: bold;
+        transition: color 0.3; }
+    html .navigation li:active, body .navigation li:active {
+      transform: scale(0.9); }
+  html .footer, body .footer {
+    margin-top: 50px; }
+  html .footer2, body .footer2 {
+    margin-top: 50px;
+    display: grid;
+    justify-items: center; }
+  html .body__titleBig, body .body__titleBig {
+    font-size: 50px; }
+  html .foot__index, body .foot__index {
+    display: flex; }
+    html .foot__index li, body .foot__index li {
+      margin: 0 15px;
+      list-style-type: none; }
+      html .foot__index li a, body .foot__index li a {
+        color: #e2e8f0;
+        font-weight: bold; }
+
+.background {
+  background-image: url("./images/background.png");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat; }
+
+.header {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  padding: 10px 10px; }
+  .header__title {
+    color: #e2e8f0;
+    padding: 0; }
+    .header__title a {
+      font-size: 50px; }
+  .header__title:hover::after {
+    content: 'Inicio';
+    margin-left: 5px;
+    font-size: 15px; }
+
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 20px 20px 20px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  margin-top: 30px; }
+  .card__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .card__container {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 0; }
+  .card__title {
+    position: relative;
+    border-radius: 20px; }
+    .card__title img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px; }
+  .card__info {
+    margin-bottom: 40px; }
+  .card__href {
+    background-color: #22c55e;
+    color: #fff;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s; }
+  .card__href:hover {
+    background-color: #045e25; }
+  .card__image {
+    transition: transform 0.3s;
+    border-radius: 10px; }
+  .card__image:hover {
+    transform: rotate(5deg); }
+
+.card2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 20px 20px 20px;
+  width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  margin-top: 30px; }
+
+.form {
+  display: grid;
+  grid-auto-rows: auto; }
+
+form {
+  margin: 100px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  justify-content: right; }
+
+@media (max-width: 768px) {
+  .background {
+    background-size: auto 150%; }
+  .navigation {
+    justify-content: end; }
+  html {
+    display: table;
+    width: 100%; } }
+
+@media (max-width: 576px) {
+  .background {
+    background-size: auto 150%; }
+  .navigation {
+    justify-content: end; } }
+
+@media (max-width: 468px) {
+  .background {
+    background-size: auto 150%; }
+  .navigation {
+    margin-top: 30px;
+    justify-content: end; }
+  .card__container {
+    grid-template-columns: 1fr; } }

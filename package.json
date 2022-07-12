@@ -1,0 +1,22 @@
+{
+  "name": "idea-daniel-lozano",
+  "version": "1.0.0",
+  "description": "Idea for proyect in web development course",
+  "main": "index.js",
+  "scripts": {
+    "build" : "node-sass --include-path sass sass/style.scss style2.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-lozano-cel/proyecto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-lozano-cel/proyecto/issues"
+  },
+  "homepage": "https://github.com/daniel-lozano-cel/proyecto#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
