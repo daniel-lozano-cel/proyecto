@@ -1,4 +1,16 @@
+
 @import 'variables';
+@mixin flex{
+    display:flex;
+}
+@mixin card{
+    background-color: $colorBlack;
+    padding: 20px 20px 20px 20px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px $colorBlack;
+    margin-top: 30px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +24,7 @@ html, body{
     }
     body{
         font-family: 'Righteous', cursive;
-        background-color: rgb(225,225,225);
+        background-color: $bgColor;
         color:white;
         margin-right: 0px;
         
@@ -30,7 +42,7 @@ html, body{
                 }
             }
             h5{
-                display: flex;
+                @include flex;
                 justify-content: center;
                 margin-top: 30px;
             }
@@ -40,12 +52,12 @@ html, body{
         color: red;
     }
     .about{
-        display: flex;
+        @include flex;
         justify-content: center;
         margin-top: 20px;
     }
     .navigation{
-        display: flex;
+        @include flex;
         justify-content: end;
         a{
             font-size: 30px;
@@ -65,7 +77,7 @@ html, body{
         margin-top: 50px;
     }
     .footer2{
-        margin-top: 50px;
+        @extend .footer;
         display: grid;
         justify-items: center;
     }
@@ -73,7 +85,7 @@ html, body{
         font-size: 50px;
     }
     .foot__index{
-        display:flex;
+        @include flex;
         li{
             margin: 0 15px;
             list-style-type: none;
@@ -91,7 +103,7 @@ html, body{
     background-repeat: no-repeat;
 }
 .header{
-    background-color: #0f172a;
+    background-color: $bgColor2;
     color: $fontColor;
     padding: 10px 10px;
 
@@ -99,7 +111,7 @@ html, body{
         color:$fontColor;
         padding: 0;
         a{
-            font-size: 50px;
+            @extend .body__titleBig;
         }  
     }
     &__title:hover::after  {
@@ -110,12 +122,7 @@ html, body{
 }
 
 .card{
-    background-color: $colorBlack;
-    padding: 20px 20px 20px 20px;
-    width: 400px;
-    border-radius: 20px;
-    box-shadow: 0 25px 50px -12px $colorBlack;
-    margin-top: 30px;
+    @include card;
     &__container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -138,11 +145,11 @@ html, body{
         margin-bottom: 40px;
     }
     &__href{
-        background-color: #22c55e;
+        background-color: $buttonColor;
         color: #fff;
         width: 200px;
         height: 30px;
-        display:flex;
+        @include flex;
         align-items: center;
         padding:20px;
         border-radius: 10px;
@@ -150,7 +157,7 @@ html, body{
         transition: background-color 0.3s;   
     }
     &__href:hover{
-        background-color: #045e25;
+        background-color: $buttonHover;
     }
     &__image{
         transition: transform 0.3s;
@@ -163,13 +170,7 @@ html, body{
     
 }
 .card2{
-    background-color: $colorBlack;
-    padding: 20px 20px 20px 20px;
-    width: 800px;
-    border-radius: 20px;
-    box-shadow: 0 25px 50px -12px $colorBlack;
-    margin-top: 30px;
-    
+    @include card;
 }
 .form{
     display: grid;

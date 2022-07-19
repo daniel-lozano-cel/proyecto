@@ -1,3 +1,9 @@
+color {
+  color: #22c55e; }
+
+hover {
+  color: #045e25; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -10,7 +16,7 @@ html, body {
     margin: 0; }
   html body, body body {
     font-family: 'Righteous', cursive;
-    background-color: #e1e1e1;
+    background-color: white;
     color: white;
     margin-right: 0px; }
     html body a, body body a {
@@ -42,13 +48,12 @@ html, body {
         transition: color 0.3; }
     html .navigation li:active, body .navigation li:active {
       transform: scale(0.9); }
-  html .footer, body .footer {
+  html .footer, html .footer2, body .footer, body .footer2 {
     margin-top: 50px; }
   html .footer2, body .footer2 {
-    margin-top: 50px;
     display: grid;
     justify-items: center; }
-  html .body__titleBig, body .body__titleBig {
+  html .body__titleBig, html .header__title a, .header__title html a, body .body__titleBig, body .header__title a, .header__title body a {
     font-size: 50px; }
   html .foot__index, body .foot__index {
     display: flex; }
@@ -72,8 +77,6 @@ html, body {
   .header__title {
     color: #e2e8f0;
     padding: 0; }
-    .header__title a {
-      font-size: 50px; }
   .header__title:hover::after {
     content: 'Inicio';
     margin-left: 5px;
@@ -124,7 +127,7 @@ html, body {
 .card2 {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 20px 20px 20px;
-  width: 800px;
+  width: 400px;
   border-radius: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   margin-top: 30px; }
