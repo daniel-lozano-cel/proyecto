@@ -140,11 +140,22 @@ html, body {
   grid-auto-rows: auto; }
 
 form {
-  margin: 100px 20px 0px 20px;
+  margin: 100px 180px 0px 180px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
   justify-content: right; }
+
+@media (max-width: 1440px) {
+  p {
+    font-size: 22px; } }
+
+@media (max-width: 1024px) {
+  form {
+    margin: 100px 80px 0px 80px; }
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr; } }
 
 @media (max-width: 768px) {
   .background {
@@ -155,6 +166,17 @@ form {
     display: table;
     width: 100%; } }
 
+@media (max-width: 670px) {
+  body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0px; }
+  form {
+    margin: 100px 10px 0px 10px; }
+  .card__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; } }
+
 @media (max-width: 576px) {
   .background {
     background-size: auto 150%; }
@@ -162,6 +184,15 @@ form {
     justify-content: end; } }
 
 @media (max-width: 468px) {
+  .header__title {
+    margin: 0px 0px 0px 110px; }
+  .navigation {
+    margin: 0px 60px 0px 0px; }
+  .body__titleBig, .header__title a {
+    font-size: 30px;
+    margin: 0px 0px 0px -70px; }
+  .image2 {
+    display: none; }
   .background {
     background-size: auto 150%; }
   .navigation {
@@ -169,3 +200,9 @@ form {
     justify-content: end; }
   .card__container {
     grid-template-columns: 1fr; } }
+
+@media (max-width: 360px) {
+  body {
+    overflow-x: unset; }
+  .image2, .image3 {
+    display: none; } }
