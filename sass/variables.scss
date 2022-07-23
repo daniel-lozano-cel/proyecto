@@ -7,19 +7,6 @@ $bgColor2: #0f172a;
 $buttonColor: #22c55e;
 $buttonHover: #045e25;
 
-$button:(
-    "color":$buttonColor,
-    "hover":$buttonHover,
-);
-
-@debug map-get ($button,"color");
-@debug map-get ($button,"hover");
-
-@each $button, $color in $button{
-    #{$button}{
-        color:$color;
-    }
-}
 
 
 // $button: (
