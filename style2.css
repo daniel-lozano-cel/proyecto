@@ -124,14 +124,6 @@ html, body {
   .card__image:hover {
     transform: rotate(5deg); }
 
-.card2 {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px 20px 20px 20px;
-  width: 400px;
-  border-radius: 20px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  margin-top: 30px; }
-
 .card3 {
   height: 450px; }
 
@@ -203,6 +195,19 @@ form {
 
 @media (max-width: 360px) {
   body {
-    overflow-x: unset; }
+    overflow-x: hidden; }
+  form {
+    margin: 0px 2px 0px 2px;
+    transform: scale(0.8); }
+  .card {
+    transform: scale(0.9); }
   .image2, .image3 {
     display: none; } }
+
+@media (max-width: 320px) {
+  form {
+    line-break: anywhere; }
+  .consulta, #consulta {
+    display: none; }
+  #check {
+    transform: scale(0.7); } }

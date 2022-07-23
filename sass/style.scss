@@ -94,12 +94,14 @@ html, body{
         }
     }
 }
+
 .background{
     background-image: url("./images/background.png");
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
+
 .header{
     background-color: $bgColor2;
     color: $fontColor;
@@ -167,9 +169,7 @@ html, body{
     
     
 }
-.card2{
-    @include card;
-}
+//extras
 .card3{
     height: 450px;
 }
@@ -178,6 +178,9 @@ html, body{
     display: grid;
     grid-auto-rows: auto;
 }
+
+//forms
+
 form{
     margin: 100px 180px 0px 180px;
     display: grid;
@@ -185,6 +188,7 @@ form{
     gap:20px;
     justify-content: right;
 }
+//media queries
 @media (max-width:1440px){
     p {
         font-size: 22px;
@@ -265,10 +269,28 @@ form{
 }
 @media (max-width:360px){
     body{
-        overflow-x:unset;
+        overflow-x: hidden;
+    }
+    form{
+        margin: 0px 2px 0px 2px;
+        transform: scale(0.80);
+    }
+    .card{
+        transform: scale(0.90);
     }
     .image2,.image3{
         display: none;
     }
     
+}
+@media (max-width:320px){
+    form{
+        line-break: anywhere;
+    }
+    .consulta,#consulta{
+        display: none;
+    }
+    #check{
+        transform:scale(0.70) ;
+    }
 }
