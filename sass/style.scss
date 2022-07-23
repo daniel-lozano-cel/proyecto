@@ -242,6 +242,9 @@ form{
 }
 
 @media (max-width:468px){
+    body{
+        overflow-x: hidden;
+    }
     .header__title{
         margin:0px 0px 0px 110px;
     }
