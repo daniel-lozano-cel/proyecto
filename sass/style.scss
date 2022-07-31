@@ -328,6 +328,11 @@ form{
     .about{
         font-size: 15px;
     }
+    .card{
+        p {
+            display: none;
+        }
+    }
     .body__titleBig{
         font-size: 15px;
         margin: 0px 0px 0px -70px;

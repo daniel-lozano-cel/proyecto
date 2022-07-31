@@ -225,6 +225,8 @@ form {
     line-break: anywhere; }
   .about {
     font-size: 15px; }
+  .card p {
+    display: none; }
   .body__titleBig, .header__title a {
     font-size: 15px;
     margin: 0px 0px 0px -70px; }
