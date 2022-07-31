@@ -188,7 +188,7 @@ form {
   .header__title {
     font-size: 30px; }
   .about {
-    font-size: 15px;
+    font-size: 18px;
     padding-right: 120px; }
   .body__titleBig, .header__title a {
     padding-left: 100px; }
@@ -223,6 +223,8 @@ form {
 @media (max-width: 320px) {
   form {
     line-break: anywhere; }
+  .about {
+    font-size: 15px; }
   .body__titleBig, .header__title a {
     font-size: 15px;
     margin: 0px 0px 0px -70px; }
