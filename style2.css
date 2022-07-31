@@ -202,8 +202,9 @@ form {
     font-size: 30px; }
   body {
     overflow-x: hidden; }
-  .about2 {
-    padding-left: 0px; }
+  .about {
+    padding: 0px;
+    font-size: 15px; }
   form {
     margin: 0px 2px 0px 2px;
     transform: scale(0.8); }
