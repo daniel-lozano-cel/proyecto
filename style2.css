@@ -175,18 +175,28 @@ form {
   .background {
     background-size: auto 150%; }
   .navigation {
-    justify-content: end; } }
+    justify-content: end;
+    padding-right: 80px; }
+  .about {
+    padding-right: 150px; } }
 
 @media (max-width: 468px) {
   body {
     overflow-x: hidden; }
+  .footer, html .footer2, body .footer2 {
+    padding-right: 150px; }
   .header__title {
-    margin: 0px 0px 0px 110px; }
+    font-size: 30px; }
+  .about {
+    font-size: 15px;
+    padding-right: 120px; }
+  .body__titleBig, .header__title a {
+    padding-left: 100px; }
   .navigation {
     margin: 0px 60px 0px 0px; }
-  .body__titleBig, .header__title a {
-    font-size: 30px;
-    margin: 0px 0px 0px -70px; }
+  h1 {
+    font-size: 10px;
+    margin: 0px 0px 0px -50px; }
   .image2 {
     display: none; }
   .background {
@@ -202,9 +212,6 @@ form {
     font-size: 30px; }
   body {
     overflow-x: hidden; }
-  .about {
-    padding: 0px;
-    font-size: 15px; }
   form {
     margin: 0px 2px 0px 2px;
     transform: scale(0.8); }
