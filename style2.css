@@ -209,6 +209,9 @@ form {
 @media (max-width: 320px) {
   form {
     line-break: anywhere; }
+  .body__titleBig, .header__title a {
+    font-size: 15px;
+    margin: 0px 0px 0px -70px; }
   .consulta, #consulta {
     display: none; }
   #check {
