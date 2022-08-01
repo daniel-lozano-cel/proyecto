@@ -227,7 +227,7 @@ form {
     font-size: 15px; }
   .card p {
     display: none; }
-  .body__titleBig, .header__title a {
+  .body__titleBig, .header__title a, .footer2 {
     font-size: 15px;
     margin: 0px 0px 0px -70px; }
   .consulta, #consulta {
